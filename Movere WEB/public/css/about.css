@@ -1,0 +1,152 @@
+﻿
+.content {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	text-align: justify;
+	padding-bottom: 50px;
+	padding-top: 110px;
+}
+
+.content p {
+	font-size: 20pt;
+	margin: 10px 0 10px 0;
+}
+
+.content h2 {
+	font-size: 24pt;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+.content h1 {
+	font-size: 36pt;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+p {
+	display: table; 
+	font-size: 15pt;
+}
+
+:root {
+  --fir-font-article: "adobe-garamond-pro", "Times New Roman", Times;
+  --fir-font-header: "foco", Helvetica;
+  --fir-blue-twitter-alpha: rgba(85,172,238, 0.6);
+  --fir-color-grey: rgba(0,0,0, 0.40);
+}
+
+
+.fir-clickcircle {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  cursor: pointer;
+  
+  object-fit: cover; 
+  
+}
+
+.fir-image-figure {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+/*	position: relative;*/
+	text-decoration: none;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+.fir-image-figure .caption, .fir-image-figure figcaption {
+  padding-left: 15px;
+}
+
+html.wf-active .fir-image-figure .fig-author-figure-title {
+  font-family: var(--fir-font-header);
+  font-size: 16px;
+}
+
+.fir-image-figure .fig-author-figure-title {
+  color: var(--fir-color-grey);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.fir-imageover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeInFadeOut 2s infinite;
+}
+
+@keyframes fadeInFadeOut {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+.socialButton ul {
+	display:flex;
+	margin:0px;
+	padding:0px;
+}
+
+.socialButton ul li {
+	list-style: none;
+}
+
+.socialButton ul li a {
+	width:40px;
+	height:40px;
+	display:block;
+	text-align:center;
+	margin:0 5px;
+	border-radius: 50%;
+	padding: 5px;
+	box-sizing: border-box;
+	text-decoration:none;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+	background: linear-gradient(0deg, #ddd, #fff);
+	transition: .5s;
+}
+
+.socialButton ul li a:hover {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.socialButton ul li a .fa {
+	width: 100%;
+	height:100%;
+	display:block;
+	background: linear-gradient(0deg, #fff, #ddd);
+	border-radius: 50%;
+	line-height: calc(60px - 25px);
+	font-size:14px;
+	color: #262626;
+	transition: .5s;
+}
+
+.socialButton ul li:nth-child(1) a:hover .fa {
+	color: #3b5998;
+}
+
+.socialButton ul li:nth-child(2) a:hover .fa {
+	color: #00aced;
+}
+
+.socialButton ul li:nth-child(3) a:hover .fa {
+	color: #dd4b39;
+}
+
+.socialButton ul li:nth-child(4) a:hover .fa {
+	color: #007bb6;
+}
+
+.socialButton ul li:nth-child(5) a:hover .fa {
+	color: #e4405f;
+}
+

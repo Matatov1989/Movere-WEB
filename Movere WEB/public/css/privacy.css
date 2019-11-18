@@ -1,0 +1,65 @@
+﻿aside {
+/*	background: #f080f0;  Цвет фона */
+    padding: 10px; /* Поля */
+    width: 250px; /* Ширина сайдбара */
+    float: right; /* Обтекание слева */
+	position: fixed;
+	top: 120px;
+	right: 100px;
+}
+article {
+    margin-right: 280px; /* Отступ справа */
+    display: block; 	/* Блочный элемент */
+}
+
+.content {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	text-align: justify;
+	padding-bottom: 50px;
+	padding-top: 110px;
+}
+
+.content p, ul, li{
+	font-size: 20pt;
+	margin: 10px 0 10px 0;
+}
+
+.content h2 {
+	font-size: 24pt;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+.content h1 {
+	font-size: 36pt;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+.list{
+	text-decoration: none;
+	padding-right: 20px;
+	color: black;
+}
+
+.list li {
+	margin-left: 20px;
+	font-size: 12pt;
+}
+
+.list a:hover {
+	color: #008bf6; 
+	background:;
+	font-size: 12pt;
+}
+
+li {
+	list-style-type: decimal;
+}
+
+ul {
+	padding: 0 0 0 0;
+	margin-left: 110px;
+}

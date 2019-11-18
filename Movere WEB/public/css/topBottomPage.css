@@ -1,0 +1,35 @@
+﻿/*header*/
+header {
+	background: #008bf6;
+	padding-left: 10% ;
+	position: fixed;
+	padding-top:8px;
+	padding-bottom: 8px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+header img {
+	margin: ;
+}
+
+/*footer*/
+footer {
+	display: block;
+	background: white;
+	height: 80px;
+	padding: 25px 10%;
+}
+footer a{
+	text-decoration: none;
+	font-size: 14pt;
+	padding-right: 25px;
+	color: black;
+}
+footer a:hover {
+	color: #008bf6;
+	background:;
+}
+footer p {
+	margin-top: 25px;
+}

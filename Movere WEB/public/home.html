@@ -1,0 +1,216 @@
+﻿
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<title>Movere</title>
+		<link rel="shortcut icon" href="img/favicon.png"/>
+		<meta name="keywords" content="" />
+	
+		<!--
+			https://www.linkedin.com/post-inspector/inspect/https:%2F%2Fmovere-point.web.app%2Fhome.html
+			https://developers.facebook.com/tools/debug/sharing/?q=https%3A%2F%2Fmovere-point.web.app%2Fhome.html
+		-->
+		
+		<meta property="og:url" content="https://movere-point.web.app/home.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Movere for Free!"/>
+		<meta property="og:description" content="Visit our site and download the application from Google Play Market! И ты получишь незабываемые ощущения от использовния программы"/>
+		<meta property="og:image" content="https://movere-point.web.app/img/share1.png"/>
+		<meta property="og:image:type" content="image/png"/>
+		<!--<meta property="og:image:alt" content="https://movere-point.web.app/img/share.png"/>
+
+		<meta property="og:image:width" content="600px"/>
+		<meta property="og:image:height" content="600px"/>-->
+		
+		<meta name="author" content="Matatov Yury">
+		
+		
+		<link rel="stylesheet" href="css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="css/home.css" type="text/css" media="screen and (min-width:901px)" />
+		<link rel="stylesheet" href="css/mhome.css" type="text/css" media="screen and (max-width:900px)" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		
+		<!-- icons to social buttons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#nav").on("click","a", function (event) {
+					event.preventDefault();
+					var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+					$('body,html').animate({scrollTop: top}, 500);
+				});
+			});			
+		</script>
+		
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+	</head>
+
+	<body>
+		<header>
+			<div class="block">
+				<a href="home.html" class="header_logo"><img src="img/logo.png" width="193px" height="57px" alt="" /></a>
+				<a href="home.html" class="header_icon"><img class="fir-clickcircle1" src="" /></a> 
+				<div class="block_menu">
+					<ul class="navigation_menu" id="nonemobile">
+						<li id="nav"><a class="navigation_cursor" href="#2">Загрузить</a></li>
+						<li><a class="navigation_cursor" onclick="checkUser()" >Карта</a></li>
+						<li><a class="navigation_cursor" href="">Легенды</a></li>
+						<li><a class="navigation_cursor" href="about.html">О нас</a></li>	
+					</ul>
+				</div>	
+				<h1 class="title">Новое приложение Movere</h1>
+				<h2 class="slogan">это всемирное сообщество любителей легкого и тяжелого автотранспорта, а главное, это возможность найти новых друзей по общему интересу и быстро обратиться за помощью если с Вами что-то случилось в дороге!</h2>
+			</div>
+		</header>
+
+		<div class="function">
+		
+			<h2>Как это работает?</h2>
+			
+			<figure class="fir-image-figure">
+
+				<img class="fir-clickcircle" src="img/navig.png">
+	
+				<figcaption>
+				<h3>Регистрация</h3>
+				<p>
+					Регистрация и использование программы БЕСПЛАТНО!
+					При регистрации Вам не нужно запоминать новые логин и пароль. 
+					Movere использует Вашу учетную запись Google для входа в систему.
+				</p>
+			  </figcaption>
+			</figure>
+			
+			<figure class="fir-image-figure">
+
+				<img class="fir-clickcircle" src="img/navig.png">
+	
+				<figcaption>
+				<h3>Навигация</h3>
+				<p>
+					Movere определяет Ваше местоположение и выводит его на Google карту с целью объединения всех любителей автотранспорта в одно целое. 
+					Это дает возможность видеть на карте ближайших пользователей, а также пользователей других городов и стран и 
+					проложить маршрут до другого пользователя.
+				</p>
+			  </figcaption>
+			</figure>
+			
+			<figure class="fir-image-figure">
+
+				<img class="fir-clickcircle" src="img/talk.png">
+	
+				<figcaption>
+				<h3>Общение</h3>
+				<p>
+					Movere использует Интернет-подключение Вашего телефона (4G/3G/2G/EDGE или WiFi, если он доступен),
+					для легкой и быстрой связи с любым пользователем через чат предусмотренный в программе.
+					В случае отсуствия саязи или отключения телефона, сервисы Movere доставят Вам все пропущенные сообщения при следующем запуске программы.
+				</p>
+			  </figcaption>
+			</figure>
+			
+			<figure class="fir-image-figure">
+
+				<img class="fir-clickcircle" src="img/help.png">
+	
+				<figcaption>
+				<h3>Новости</h3>
+				<p>
+					Movere не даст тебе пропустить событий связанное с автомобилями: выставки, парады, гонки и всякого рода шоу. 
+					Все события доступны по местуположения пользователя в радиусе 30 км. Откуда берутся новости? Все очень просто!
+					Вы как пользователь и Вы вкурсе какого-то события, можете создать его заполнив маленькую форму "создания события".
+				</p>
+			  </figcaption>
+			</figure>
+				
+			<figure class="fir-image-figure">
+
+				<img class="fir-clickcircle" src="img/help.png" alt="David East - Author">
+	
+				<figcaption>
+				<h3>Помощь</h3>
+				<p>
+					Основная фишка Movere это в случае каких-либо проблем в дороге при условии хорошей телефонной связи обратиться за помощью
+					к пользователям (сообществу) Movere отправивь сигнал SOS всем пользователям в радиусе 30 км.
+				</p>
+			  </figcaption>
+			</figure>
+		
+			<figure class="fir-image-figure">
+
+				<img class="fir-clickcircle" src="img/help.png" alt="David East - Author">
+	
+				<figcaption>
+				<h3>Итог</h3>
+				<p>
+					Итого мы имеем простуньку социальную программу, 
+					которая позволяет быть вкурсе новостей, 
+					заводить новые знакомства как в собственном городе, так и по всему миру.
+					В случае трудной ситуации можно быстро и легко обратиться за помощью в наше сообщество Movere.
+					Система Movere построена так, что чем больше пользователей, тем быстрее тебе помогут и будет маленькая вероятность, 
+					что ты пропустишь что-то важное связанное с автомобилями. По-этому не поленись и посоветуй Movere своему лучшему другу,
+					или поделись ссылкой в новостной леньте социальных сетей!
+				</p>
+				<div class="social_buttons">
+					<ul>
+						<li><a id="fbShare" href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a id="whatsappShare" href="" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+						<li><a id="linkedInShare" href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a id="twitterShare" href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a id="vkShare" href="" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li><a id="okShare" href="" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+						<li><a id="telegramShare" href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li> 
+					</ul>
+				</div>
+				
+			  </figcaption>
+			</figure>
+			
+			
+				
+		
+		</div>
+		
+		<div class="download_block" id="2">
+			<div class="block_sides">
+				<div class="download_block_left">
+					<img src="img/screens.png" width="565" height="448" alt="Screenshots" />
+				</div>
+				<div class="download_block_right">
+					<h1>Загрузить Movere</h1>
+					<h2>для Android</h2>
+					<a href="privacy.html" class="policy">Политика конфиденциальности</a>
+					<p>
+						<a href='file:///ge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>	
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<a href="about.html">О нас</a>
+			<a href="privacy.html"> Политика конфиденциальности </a>
+			<a href=""> Поддержка </a>
+			<p> © 2019 Movere </p>
+		</footer>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-messaging.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-performance.js"></script>
+		
+		<script src="javaScript/initFirebase.js"></script>
+		<script src="javaScript/homeFirebase.js"></script> 
+		<script src="javaScript/initHomePage.js"></script> 
+		<script src="javaScript/latlon-geohash.js"></script> 
+			
+	</body>
+</html>
